@@ -29,3 +29,42 @@
     margin-top: 230px;
    }
 }
+.disclaimer-section{
+    background-image: url("/img/disclaimer/disclaimer-mob.png");
+    background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+}
+.disclaimer-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.disclaimer-text{
+    margin-top: 28px;
+        font-size: 28px;
+        line-height: 1.14286;
+     
+}
+.disclaimer-title{
+        font-size: 32px;
+        line-height: 1.25;
+}
+.span{
+     font-weight: 900;  
+}
+@media only screen and (min-width: 1439px) {
+  .disclaimer-section{
+    background-image: url("/img/disclaimer/disclaimer-desk.png");
+  }
+  .disclaimer-container{
+    padding: 60px 106px;
+  }
+  .disclaimer-title{
+    font-size: 44px;
+    line-height: 1.09091;
+}
+.disclaimer-text{
+        font-size: 36px;
+        line-height: 1.33333;
+}
+}
