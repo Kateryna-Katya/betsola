@@ -161,3 +161,19 @@ background-image: url("/img/play/desk.png");
     margin-bottom: 45px;
 }
 }
+.feature-section{
+    background-image: url("/img/feature/back.png");
+        background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            height: 1331px;
+}
+.feature-wrapper{
+    margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.span-two{
+    font-weight: 700;
+}
