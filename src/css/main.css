@@ -177,3 +177,13 @@ background-image: url("/img/play/desk.png");
 .span-two{
     font-weight: 700;
 }
+@media only screen and (min-width: 1439px) {
+   .feature-section{
+    background-image: url("/img/feature/desk.png");
+    height: 1153px;
+   }
+   .feature-wrapper{
+width: 681px;
+margin-top: 630px;
+   }
+}
