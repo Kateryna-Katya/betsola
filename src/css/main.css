@@ -68,3 +68,32 @@
         line-height: 1.33333;
 }
 }
+.about-section{
+    background-image: url("/img/about/about-mob.png");
+    background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 1105px;
+}
+.about-text-wrapper{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media only screen and (min-width: 1439px) {
+.about-section{
+    background-image: url("/img/about/about-desk.png");
+    height: 588px;
+}
+.about-container{
+    padding-left: 80px;
+}
+.about-title{
+    text-align: left;
+}
+.about-text-wrapper{
+    margin-top: 60px;
+    width: 681px;
+}
+}
