@@ -4,21 +4,20 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-  background: #063a01;
-  height: 60px;
+box-shadow: 0 4px 12px 0 rgba(49, 28, 143, 0.5);
+  background: linear-gradient(0deg, #2b4caf 0%, #000c32 100%);
+  height: 72px;
   width: 100%;
-  border-bottom: 1px solid #fff;
+  border: 1px solid rgba(254, 254, 254, 0.25);
 }
 
 .header-container {
-  padding: 12px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo-mob-link {
-  display: block;
-}
+
 
 .menu-button {
   display: flex;
@@ -38,7 +37,11 @@
 .modal {
   display: none;
   backdrop-filter: blur(22px);
-  background: #063a01;
+  box-shadow: 0 4px 12px 0 rgba(49, 28, 143, 0.5);
+  background-image:url("/img/header/mob.png"), linear-gradient(0deg, #2b4caf 0%, #000c32 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   width: 374px;
   height: auto;
   z-index: 1000;
@@ -53,34 +56,37 @@
 .menu-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   align-items: left;
 }
 
 .menu-list-item {
-  font-size: 15px;
-  transition: color 0.3s easy;
+  font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fffcfc;
+  transition: background 0.3s easy;
+  border-radius: 360px;
+    padding: 8px 12px;
 }
 
 .menu-list-item:hover {
-  color: #ff9d00;
-  ;
+  background: rgba(255, 255, 255, 0.2);
+  
 }
 
 @media screen and (min-width: 1440px) {
   .header {
     width: 100%;
-    height: 122px;
+    height: 96px;
   }
 
   .header-container {
-
-    justify-content: center;
+padding: 16px 88px;
+    justify-content: space-between;
   }
 
-  .logo-mob-link {
-    display: none;
-  }
 
   .menu-button {
     display: none;
@@ -88,9 +94,11 @@
 
   .navigation-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 360px;
+    padding: 8px;
     gap: 40px;
+    justify-content: center;
   }
 
   .header-container {
@@ -98,12 +106,15 @@
   }
 
   .navigation-item {
+    border-radius: 360px;
+      padding: 8px 12px;
+      font-weight: 300;
     font-size: 18px;
-    transition: color 0.3s easy;
+    transition: background 0.3s easy;
   }
 
   .navigation-item:hover,
   .navigation-item:active {
-    color: #ff9d00;
+    background: rgba(255, 255, 255, 0.2);;
   }
 }
