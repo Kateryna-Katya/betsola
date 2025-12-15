@@ -37,6 +37,7 @@
 <section class="play-section" id="demo">
     <div class="container">
         <h2 class="play-title">Play The Greatest Catch Bonus Buy</h2>
+        <div class="demo-wrapper">
           <picture>
              <source srcset="
              img/play/back-desk.png 1x,
@@ -46,8 +47,16 @@
              img/play/back-mob.pngg  1x,
              img/play/back-mob@2x.png 2x
              " media="(max-width: 1438px)" />
-             <img class="play-back-img" src="/img/play/back-mob.png" alt="betvex" loading="lazy" />
+             <img class="game-img" src="/img/play/back-mob.png" alt="betvex" loading="lazy" />
         </picture>
+            <div class="iframe-wrapper">
+                <iframe id="gameIframe"></iframe>
+            
+                <button id="closeIframeBtn" class="hidden-close-btn" aria-label="Close">
+                    <img src="/img/play/close.png" alt="Close">
+                </button>
+            </div>
+        </div>
             <a class="demo-btn" href="#" data-game-url="https://demo.evoplay.games/demo/fullstate/html5/evoplay/moneyminter"
             target="gameIframe">
             <picture>
@@ -63,13 +72,7 @@
             </picture>
         </a>
         
-        <div class="ifram-wrapper">
-            <iframe id="gameIframe" style="display: none; width: 100%; height: 600px; border: none; margin-top: 20px;"></iframe>
-        
-            <button id="closeIframeBtn" aria-label="Close" class="hidden-close-btn">
-              <img src="./img/play/close.png" alt="Close">
-            </button>
-        </div>
+
     </div>
 </section>
 <section class="feature-section" id="feature">
